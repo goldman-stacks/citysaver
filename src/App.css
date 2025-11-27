@@ -1,0 +1,231 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #020617;
+  color: #f9fafb;
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(circle at top, #4c1d95 0, #020617 55%);
+}
+
+.mobile-shell {
+  width: 100%;
+  max-width: 420px;
+  padding: 16px 16px 32px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.brand {
+  font-size: 1.75rem;
+  color: #c4b5fd;
+  margin: 0;
+}
+
+.tagline {
+  margin: 2px 0 0;
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.pill-button {
+  font-size: 10px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid #a855f7;
+  background: transparent;
+  color: #e9d5ff;
+}
+
+.prefs-summary {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 16px;
+  border: 1px solid #1f2937;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  font-size: 11px;
+}
+
+.prefs-title {
+  margin: 0 0 4px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.prefs-summary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #9ca3af;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-card {
+  display: flex;
+  gap: 10px;
+  background: #020617;
+  border-radius: 16px;
+  border: 1px solid #1f2937;
+  padding: 10px;
+}
+
+.product-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  background: #111827;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-name {
+  margin: 0;
+  font-size: 13px;
+}
+
+.retailer {
+  margin: 2px 0 0;
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 4px;
+}
+
+.product-meta {
+  font-size: 11px;
+  color: #e5e7eb;
+}
+
+.meta-sub {
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+.score-block {
+  text-align: right;
+}
+
+.score-label {
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+.score-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: #c4b5fd;
+}
+
+/* Modal */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 16px;
+  background: #020617;
+  border-radius: 20px;
+  border: 1px solid #1f2937;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.modal-title {
+  margin: 0 0 4px;
+  font-size: 16px;
+  color: #c4b5fd;
+}
+
+.modal-text {
+  margin: 0 0 10px;
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.modal-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.modal-row select {
+  font-size: 11px;
+  border-radius: 999px;
+  border: 1px solid #374151;
+  background: #020617;
+  color: #e5e7eb;
+  padding: 3px 8px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.modal-actions button {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.modal-actions .secondary {
+  border-color: #4b5563;
+  background: transparent;
+  color: #e5e7eb;
+}
+
+.modal-actions .primary {
+  background: #7c3aed;
+  color: #f9fafb;
+}
