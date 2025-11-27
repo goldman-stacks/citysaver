@@ -43,6 +43,31 @@ body {
   color: #9ca3af;
 }
 
+.search {
+  margin-bottom: 8px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  background: rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+  font-size: 11px;
+  box-sizing: border-box;
+}
+
+.search-input::placeholder {
+  color: #6b7280;
+}
+
+.no-results {
+  font-size: 11px;
+  color: #9ca3af;
+  margin-top: 8px;
+}
+
 .pill-button {
   font-size: 10px;
   padding: 4px 10px;
